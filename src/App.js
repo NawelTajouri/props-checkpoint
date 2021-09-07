@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './profile/Profile';
 
-function App() {
+
+const App = () => {
+  
+
+  
+  const hundleName =(x)=> {
+    alert(`profile for:${x}`)
+  }
+  
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <div className="myApp">
+            <div>
+            <Profile head="Bio" bio="Hello, My name is Nawel. Now, I am a Full Stack Js developer working with react on variety of projects." headpro="Profession" profession="Futur developer" hundleName={hundleName}  />
+            </div>
+
+ </div>
+  )
+
+  
+
 }
 
-export default App;
+
+export default App
